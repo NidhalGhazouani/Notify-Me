@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6"
+    tools:context=".activities.dashBoard">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F3F4F6"
+        android:layout_marginTop="30dp"
+        android:text="My Notifications"
+        android:textAlignment="center"
+        android:fontFamily="@font/abrilfatface_regular"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_below="@id/title"
+        android:layout_marginTop="0dp"
+        android:layout_width="370dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="555dp"
+        android:layout_gravity="center"
+        android:dividerHeight="7dp"
+        android:background="#FFFFFF"
+        android:textColor="#6B7280" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_plan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#6B7280"
+        android:contentDescription="Add new Notification"
+        android:src="@drawable/add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#6B7280"
+        android:contentDescription="Log out"
+        android:src="@drawable/baseline_logout_24" />
+
+</RelativeLayout>
